@@ -1,0 +1,14 @@
+body {
+	padding:0;
+	margin:0;
+	background:#414141;
+}
+ul,ul li {
+	padding:0;
+	margin:0;
+	list-style-type:none;
+}
+img {
+	border:0;
+}
+

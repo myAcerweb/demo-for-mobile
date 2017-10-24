@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>激发潜能</title>
+		<link href="css/style.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/animate.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css" />
+		<style type="text/css">
+			html {
+				width: 100%;
+				height: 100%;
+			}
+			
+			body {
+				background: #f6f6f6;
+				width: 100%;
+				height: 100%;
+			}
+			
+			body:before {
+				content: '';
+				position: fixed;
+				z-index: -1;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				background: url(images/football/nikeElearning_bg.png) center 0 no-repeat;
+				background-size: cover;
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+			}
+			/*第一部分*/
+			
+			.wrap1 .wrap {
+				background: rgba(60, 60, 60, 0.6);
+				font-size: 21px;
+				padding: 0;
+				margin: 0;
+				width: 100%;
+				height: 100%;
+				position: relative;
+			}
+			
+			.wrap1 .up {
+				width: 14.7rem;
+				height: 8.1rem;
+				background: rgba(255, 255, 255, 0.2);
+				border-radius: 0.17rem;
+				position: absolute;
+				left: 0;
+				right: 0;
+				margin: 0 auto;
+				margin-top: 3.5rem;
+				text-align: center;
+			}
+			
+			.wrap1 .up>img {
+				width: 4.25rem;
+				height: 4.25rem;
+				margin-top: -2.1rem;
+				opacity: 0;
+			}
+			
+			.wrap1 .up .name {
+				line-height: 0.9rem;
+				opacity: 0;
+				transition: all 1s 1s;
+			}
+			
+			.wrap1 .up .name span {
+				display: inline-block;
+				width: 4.27rem;
+				height: 1.11rem;
+				background: rgba(56, 158, 255, 1);
+				border-radius: 2.13rem;
+				font-family: PingFangSC-Medium;
+				font-size: 0.5rem;
+				color: #414141;
+				line-height: 1.11rem;
+				margin-top: -20px;
+			}
+			
+			.wrap1 .up .person_info {
+				width: 12.1rem;
+				height: 2.7rem;
+				opacity: 0.7;
+				font-family: PingFangSC-Regular;
+				font-size: 0.6rem;
+				color: rgba(255, 255, 255, 0.8);
+				line-height: 0.9rem;
+				margin: 0 auto;
+				margin-top: 0.85rem;
+				text-align: left;
+				opacity: 0;
+				overflow: hidden;
+			}
+			/*下半部分*/
+			
+			.wrap1 .down {
+				width: 14.7rem;
+				height: 9.6rem;
+				background: rgba(255, 255, 255, 0.2);
+				border-radius: 0.17rem;
+				position: absolute;
+				left: 0;
+				right: 0;
+				margin: 0 auto;
+				margin-top: 15.6rem;
+				opacity: 0
+			}
+			
+			.wrap1 .down .img_left {
+				width: 3.84rem;
+				height: 5.42rem;
+				margin-top: -2.1rem;
+				margin-left: 0.85rem;
+				opacity: 0;
+			}
+			
+			.wrap1 .down .coach {
+				font-family: PingFangSC-Medium;
+				font-size: 0.72rem;
+				color: rgba(255, 255, 255, 0.9);
+				line-height: 0.73rem;
+				position: absolute;
+				top: 2.3rem;
+				left: 4.6rem;
+				opacity: 0;
+				transition: all 1s 1s;
+			}
+			
+			.wrap1 .down .img_right {
+				width: 1.53rem;
+				height: 1.32rem;
+				position: absolute;
+				right: 1.28rem;
+				top: 0.85rem;
+				opacity: 0;
+				transition: all 1s 1s;
+			}
+			
+			.wrap1 .down .person_info {
+				width: 12.1rem;
+				height: 2.7rem;
+				opacity: 0.7;
+				font-family: PingFangSC-Regular;
+				font-size: 0.6rem;
+				color: rgba(255, 255, 255, 0.8);
+				line-height: 0.9rem;
+				margin: 0 auto;
+				margin-top: 0.85rem;
+				text-align: left;
+				opacity: 0;
+			}
+			
+			.wrap1 .find_chat {
+				padding-left: 1.28rem;
+				padding-top: 0.45rem;
+				opacity: 0;
+			}
+			
+			.wrap1 .find_chat span {
+				display: inline-block;
+				width: 3.16rem;
+				height: 1.32rem;
+				background: rgba(226, 241, 30, 0.9);
+				border-radius: 0.13rem;
+				font-family: PingFangSC-Regular;
+				font-size: 0.55rem;
+				color: #313131;
+				line-height: 1.32rem;
+				text-align: center;
+			}
+			/*第二部分*/
+			
+			.wrap2 {
+				display: none;
+			}
+			
+			.wrap2 .wrap {
+				background: rgba(60, 60, 60, 0.6);
+				font-size: 21px;
+				padding: 0;
+				margin: 0;
+				width: 100%;
+				height: 100%;
+				position: relative;
+			}
+			
+			.wrap2 .up {
+				width: 14.7rem;
+				height: 5.8rem;
+				border-radius: 0.17rem;
+				position: absolute;
+				left: 0;
+				right: 0;
+				margin: 0 auto;
+				margin-top: 1.95rem;
+				text-align: center;
+			}
+			
+			.wrap2 .up .dialog {
+				width: 12.2rem;
+				height: 5.8rem;
+				background: rgba(255, 255, 255, 0.2);
+				border-radius: 0.17rem;
+				text-align: left;
+				font-family: PingFangSC-Regular;
+				font-size: 0.6rem;
+				color: rgba(255, 255, 255, 0.7);
+				line-height: 0.9rem;
+				box-sizing: border-box;
+				padding: 0.64rem;
+			}
+			
+			.wrap2 .up .dialog img {
+				width: 5.0rem;
+				height: 7.2rem;
+				float: right;
+				margin-right: -3rem;
+				margin-top: -2.0rem;
+				opacity: 0;
+			}
+			/*下半部分*/
+			
+			.wrap2 .down {
+				width: 14.7rem;
+				height: 5.8rem;
+				border-radius: 0.17rem;
+				position: absolute;
+				left: 0;
+				right: 0;
+				margin: 0 auto;
+				margin-top: 10rem;
+			}
+			
+			.wrap2 .down .dialog {
+				width: 12.2rem;
+				height: 5.8rem;
+				background: rgba(255, 255, 255, 0.2);
+				border-radius: 0.17rem;
+				text-align: left;
+				font-family: PingFangSC-Regular;
+				font-size: 0.6rem;
+				color: rgba(255, 255, 255, 0.7);
+				line-height: 0.9rem;
+				box-sizing: border-box;
+				padding: 0.64rem;
+				margin-left: 2.5rem;
+				opacity: 0;
+			}
+			
+			.wrap2 .down .dialog img {
+				width: 5.0rem;
+				height: 7.2rem;
+				float: left;
+				margin-top: -2.0rem;
+				margin-left: -3.2rem;
+				margin-right: 0.40rem;
+				opacity: 0;
+			}
+			
+			.wrap2 .i_can {
+				width: 14.7rem;
+				height: 2rem;
+				position: fixed;
+				background: rgba(226, 255, 30, 0.9);
+				border-radius: 0.17rem;
+				bottom: 0.64rem;
+				left: 0;
+				right: 0;
+				margin: 0 auto;
+				line-height: 2rem;
+				text-align: center;
+				font-family: PingFangSC-Medium;
+				font-size: 0.72rem;
+				color: #333333;
+				opacity: 0;
+			}
+			/*第三部分*/
+			
+			.wrap3 {
+				display: none;
+			}
+			
+			.wrap3 .wrap {
+				width: 100%;
+				height: 100%;
+				background: rgba(60, 60, 60, 0.6);
+				font-size: 21px;
+				padding: 0;
+				margin: 0;
+				width: 100%;
+				height: 100%;
+				position: relative;
+				overflow: hidden;
+			}
+			
+			.wrap3 .up {
+				width: 14.7rem;
+				height: 4.81rem;
+				border-radius: 0.17rem;
+				position: relative;
+				left: 0;
+				right: 0;
+				margin: 0 auto;
+				margin-top: 1.2rem;
+				text-align: center;
+			}
+			
+			.wrap3 .up .dialog {
+				width: 14.7rem;
+				height: 4.81rem;
+				background: rgba(255, 255, 255, 0.2);
+				border-radius: 0.17rem;
+				text-align: left;
+				font-family: PingFangSC-Regular;
+				font-size: 0.6rem;
+				color: rgba(255, 255, 255, 0.7);
+				line-height: 0.9rem;
+				box-sizing: border-box;
+				padding: 0 0 0.64rem 0.64rem;
+				opacity: 0;
+			}
+			
+			.wrap3 .up .dialog>img {
+				width: 6.23rem;
+				height: 4.8rem;
+				float: right;
+				margin-right: 0rem;
+				margin-top: -0.43rem;
+			}
+			
+			.wrap3 .up .dialog .words {
+				display: inline-block;
+				float: left;
+				margin-top: 0.85rem;
+			}
+			
+			.wrap3 .up .dialog .words div {
+				font-family: PingFangSC-Medium;
+				font-size: 0.85rem;
+				color: #FFFFFF;
+			}
+			
+			.wrap3 .up .dialog .words img {
+				width: 0.68rem;
+				height: 0.68rem;
+				vertical-align: top;
+				margin-left: 0.45rem;
+				display: none;
+			}
+			
+			.wrap3 .up .dialog .words>span {
+				width: 7.2rem;
+				display: inline-block;
+				height: 1.8rem;
+				font-family: PingFangSC-Regular;
+				font-size: 0.6rem;
+				color: rgba(255, 255, 255, 0.7);
+				line-height: 0.9rem;
+				margin-top: 0.5rem;
+			}
+			
+			.wrap3 #next_group {
+				width: 14.7rem;
+				height: 2.0rem;
+				position: fixed;
+				background: rgba(226, 255, 30, 0.9);
+				border-radius: 0.17rem;
+				line-height: 2.0rem;
+				font-family: PingFangSC-Medium;
+				font-size: 0.73rem;
+				color: #333333;
+				text-align: center;
+				left: 0;
+				right: 0;
+				margin: 0 auto;
+				bottom: 0.65rem;
+			}
+			
+			.wrap3 .board {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				z-index: 1;
+				background: rgba(0, 0, 0, 0.8);
+				display: none;
+			}
+			
+			.wrap3 .white_board {
+				width: 13.46rem!important;
+				height: 17.18rem;
+				left: 10%;
+				top: 20%;
+				margin-right: 10%;
+				background: rgb(255, 255, 255);
+				border-radius: 0.43rem;
+				margin-right: 1rem;
+				box-sizing: border-box;
+				padding: 0 1.28rem 1.28rem 1.28rem;
+				z-index: 1;
+			}
+			
+			.wrap3 .white_board1 {
+				position: absolute;
+				left: 0;
+				right: 0;
+				margin: 0 auto;
+			}
+			
+			.wrap3 .white_board>img {
+				width: 6.41rem;
+				height: 6.41rem;
+				position: absolute;
+				left: 0;
+				right: 0;
+				margin: 0 auto;
+				top: -2.78rem;
+			}
+			
+			.wrap3 .white_board .title {
+				font-family: PingFangSC-Medium;
+				font-size: 0.85rem;
+				color: #333333;
+				line-height: 1.28rem;
+				margin-top: 4rem;
+			}
+			
+			.wrap3 .divid {
+				width: 1.28rem;
+				height: 0.21rem;
+				background: #333;
+				margin: 0.85rem 0;
+			}
+			
+			.wrap3 .divid1 {
+				overflow: hidden;
+				height: 1.21rem;
+				width: 100%;
+				padding-right: 1rem;
+			}
+			
+			.wrap3 .white_board p {
+				font-family: PingFangSC-Regular;
+				font-size: 0.60rem;
+				color: #666666;
+				line-height: 1.1rem;
+			}
+			
+			.wrap3 .close {
+				width: 6.4rem;
+				height: 2.432rem;
+				position: fixed;
+				left: 0;
+				right: 0;
+				margin: 0 auto;
+				bottom: -1rem;
+				background: rgba(204, 231, 29, 1);
+				text-align: center;
+				line-height: 2.432rem;
+				border-radius: 2.133rem;
+			}
+			
+			/*.wrap3 .close0 {
+				position: fixed;
+				left: 0;
+				right: 0;
+				bottom: 2rem;
+				z-index: 1;
+			}
+			
+			.wrap3 .close2,
+			.wrap3 .close3 {
+				margin-top: 2rem;
+			}
+			*/
+			.wrap3 .dividLeft {
+				width: 1.28rem;
+				float: left;
+			}
+			
+			.wrap3 .dividRight {
+				width: 1.28rem;
+				float: right;
+			}
+			
+			.wrap3 .dividRight span {
+				font-size: 1.1rem;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="wrap1">
+			<div class="wrap">
+				<div class='up animated'>
+					<img src="images/football/pic_touxiang10.png" alt="" class="animated" />
+					<div class="name animated">
+						<span>教练·赵东</span>
+					</div>
+					<div class="person_info animated">
+						一家销售运动休闲产品为主的中型门店的总教练，认真负责，有丰富的管理经验。
+					</div>
+
+				</div>
+				<div class='down animated'>
+					<img src="images/football/img_women_red_little.png" class="img_left animated" alt="" />
+					<span class="coach animated">区域经理</span>
+					<img src="images/football/ico_yinhao.png" class='img_right animated' alt="" />
+					<div class="person_info animated">
+						正在为计划开张的门店物色教练人选，认为赵东是个不错的人选，决定找赵东聊聊。
+					</div>
+					<div class="find_chat animated">
+						<span>找他聊聊</span>
+					</div>
+				</div>
+				<audio src="images/football/sound_fall.wav" id="sound_fall"></audio>
+				<audio src="images/football/rotate_head.mp3" id="sound_rotate"></audio>
+				<audio src="images/football/sound_click.wav" id="sound_click"></audio>
+			</div>
+		</div>
+		<div class="wrap2">
+			<div class="wrap">
+				<div class="up">
+					<div class="dialog animated">
+						<img src="images/football/img_wom_red2_1.png" alt="" class="animated" /> <span></span>
+					</div>
+				</div>
+				<div class="down">
+					<div class="dialog animated">
+						<img src="images/football/pic_touxiang01.png" alt="" class="animated" /><span></span>
+					</div>
+				</div>
+				<div class="i_can animated">我应该让赵东怎么做</div>
+				<audio src="images/football/sound_type.mp3" loop="loop" id="sound_type"></audio>
+				<audio src="images/football/sound_sword.wav" id="sound_sword"></audio>
+				<audio src="images/football/rotate_head.mp3" id="sound_rotate"></audio>
+				<audio src="images/football/sound_click.wav" id="sound_click"></audio>
+			</div>
+		</div>
+		<div class="wrap3">
+			<div class="board">
+				<div class="white_board white_board1 animated">
+					<img src="images/football/ico_cuowu.png" alt="" />
+					<div class="title">这是多选题</div>
+					<div class="divid"></div>
+					<p>请根据场景内容仔细审题，再做选择。</p>
+				</div>
+				<div class="close close0">返回球场</div>
+			</div>
+			<div class="board swiper-container">
+				<div class="swiper-wrapper">
+					<div class="white_board animated swiper-slide">
+						<img src="images/football/ico_zhengque.png" alt="" />
+						<div class="title">选择积极的环境氛围</div>
+						<div class="divid1">
+							<div class="divid dividLeft"></div>
+							<div class="dividRight"><span>1</span>/3</div>
+						</div>
+						<p>在NIKE，通过运动找到一个积极的环境氛围不是一件难事。在这个案例中，参与跑步能更直观更迅速地了解跑步品类产品，还能在运动中学会享受工作与生活；在跑步过程中请教团队中的资深跑者能够很好地促进团队沟通，同时也能让自己变得更敢于冒险。</p>
+						<div class="close close1">返回球场</div>
+					</div>
+					<div class="white_board animated swiper-slide">
+						<img src="images/football/ico_zhengque.png" alt="" />
+						<div class="title">找到你的动力来源</div>
+						<div class="divid1">
+							<div class="divid dividLeft"></div>
+							<div class="dividRight"><span>2</span>/3</div>
+						</div>
+						<p>最能激发人潜能的动力往往来源于自己触手可及的目标。比如这个案例，如果觉得跨品类大店的总教练难度太大，可以先从自己能够做好的助理总教练开始做起；目标确定以后，还需要给自己制定一个可执行的计划，一步步地完成目标。</p>
+						<div class="close close2">返回球场</div>
+					</div>
+					<div class="white_board animated swiper-slide">
+						<img src="images/football/ico_zhengque.png" alt="" />
+						<div class="title">敢于表达自我</div>
+						<div class="divid1">
+							<div class="divid dividLeft"></div>
+							<div class="dividRight"><span>3</span>/3</div>
+						</div>
+						<p>作为教练，在门店里应该是最敢于表达自我的人之一。在这个案例中，可以坦诚地和老店的同伴们分享自己的决定和计划，并将想法付诸行动；通过以身作则，用行动证明自己，运动员也会乐于分享自己的观点，积极参与讨论。</p>
+						<div class="close close3">返回球场</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="wrap">
+				<div class="up">
+					<div class="dialog animated">
+						<div class="words">
+							<div class="opt">A</div>
+							<span>找几位资深跑者，请他们带领一起跑步</span>
+						</div>
+						<img src="images/football/pic_a20.png" alt="" class="animated" />
+					</div>
+				</div>
+				<div class="up">
+					<div class="dialog animated">
+						<div class="words">
+							<div class="opt">B</div>
+							<span>在晨会上分享自己的决定，将想法付诸行动</span>
+						</div>
+						<img src="images/football/pic_b20.png" alt="" class="animated" />
+					</div>
+				</div>
+				<div class="up">
+					<div class="dialog animated">
+						<div class="words">
+							<div class="opt">C</div>
+							<span>满足他的要求，将他换到运动休闲区域</span>
+						</div>
+						<img src="images/football/pic_c20.png" alt="" class="animated" />
+					</div>
+				</div>
+				<div id="next_group">提交答案</div>
+				<audio src="images/football/sound_click.wav" id="sound_click"></audio>
+				<audio src="images/football/sound_sword.wav" id="sound_sword"></audio>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+	<script type="text/javascript" src="js/swiper-3.4.2.min.js"></script>
+	<script type="text/javascript" src="js/rem.js"></script>
+	<script type="text/javascript">
+		//页面元素的初始化
+
+		$(function() {
+			$('.wrap1 .up').addClass('fadeIn');
+			setTimeout(function() {
+				$('.wrap1 .up>img').css('opacity', "1");
+				$('.wrap1 .up>img').addClass('bounceInDown');
+				document.querySelector('.wrap1 #sound_fall').load();
+				document.querySelector('.wrap1 #sound_fall').play();
+				$('.wrap1 .up .name').css('opacity', '1');
+				$('.wrap1 .up .name').addClass('bounceIn');
+				setTimeout(function() {
+					//文字的出现
+					$('.wrap1 .up .person_info').css('opacity', '1');
+					$('.wrap1 .up .person_info').addClass('fadeInUp');
+					setTimeout(function() {
+						$('.wrap1 .down').css('opacity', '1');
+						$('.wrap1 .down').addClass('fadeIn');
+						setTimeout(function() {
+							$('.wrap1 .img_left').css('opacity', '1');
+							$('.wrap1 .img_left').addClass('rotateInDownLeft');
+							document.querySelector('.wrap1 #sound_rotate').load();
+							document.querySelector('.wrap1 #sound_rotate').play();
+							setTimeout(function() {
+								$('.wrap1 .coach').css('opacity', "1");
+								$('.wrap1 .coach').addClass('lightSpeedIn');
+								$('.wrap1 .img_right').css('opacity', '1');
+								$('.wrap1 .img_right').addClass('bounceInDown');
+								setTimeout(function() {
+									//文字的出现
+									$('.wrap1 .down .person_info').css('opacity', '1');
+									$('.wrap1 .down .person_info').addClass('fadeInUp');
+									setTimeout(function() {
+										$('.wrap1 .find_chat').css('opacity', '1');
+										$('.wrap1 .find_chat').addClass('headShake');
+									}, 2000);
+								}, 1000);
+							}, 1000);
+						}, 1000);
+					}, 1500);
+				}, 1000);
+			}, 1000);
+		})
+		//找他聊聊
+		$('.wrap1 .find_chat span').click(function() {
+			$(".wrap1").css("display", "none");
+			$(".wrap2").css("display", "block");
+			$(".wrap3").hide();
+			if($(".wrap2").is(':visible')) {
+				game2_1();
+			}
+		})
+
+		//文字特效
+		function textSpec(dialog, obj) {
+			var index = 0;
+			var timer = setInterval(function() {
+				obj.text(dialog.substring(0, index++));
+			}, 80);
+			if(index == dialog.length) {
+				clearInterval(timer);
+			}
+		}
+		var str0 = '最近公司决定在XXX商圈开一家大型跑步品类门店，这是一个非常好的机会，你是否愿意考虑这个位置？';
+		var str1 = '谢谢经理给我这个机会！但我有点担心，新的门店规模比我现在管理的门店要大，而且我没有接触过跑步品类，担心自己一时不能胜任总教练的职位。';
+
+		function game2_1() {
+			$('.wrap2 .up .dialog').addClass("fadeIn");
+			setTimeout(function() {
+				document.querySelector('#sound_rotate').play();
+				$('.wrap2 .up .dialog img').css('opacity', "1");
+				$('.wrap2 .up .dialog img').addClass('rotateInDownRight');
+				setTimeout(function() {
+					//第一人输入文字 计算时间
+					textSpec1(str0, $('.wrap2 .up .dialog span'));
+					var firstTime = str0.length * 60;
+					setTimeout(function() {
+						document.querySelector('#sound_type').pause();
+						$('.wrap2 .down .dialog').css('opacity', '1');
+						$('.wrap2 .down .dialog').addClass("fadeIn");
+						setTimeout(function() {
+							document.querySelector('#sound_rotate').play();
+							$('.wrap2 .down .dialog img').css('opacity', "1");
+							$('.wrap2 .down .dialog img').addClass('rotateInDownLeft');
+							setTimeout(function() {
+								//第二人输入文字 计算时间
+								textSpec1(str1, $('.wrap2 .down .dialog span'));
+								var secTime = str1.length * 60;
+								setTimeout(function() {
+									document.querySelector('.wrap2 #sound_type').pause();
+									$('.wrap2 .i_can').css('opacity', '1');
+									$('.wrap2 .i_can').addClass('bounceInLeft');
+									document.querySelector('.wrap2 #sound_sword').play();
+								}, secTime);
+							}, 500);
+						}, 1000);
+					}, firstTime);
+				}, 500);
+			}, 1000);
+		}
+		//		document.body.onclick = function() {
+		//			document.querySelector('#sound_click').play();
+		//		}
+		$('.wrap2 .i_can').click(function() {
+			document.querySelector('.wrap2 #sound_sword').play();
+			$('.wrap2 .i_can').addClass('bounceOutRight');
+			setTimeout(function() {
+				$(".wrap2").hide();
+				$(".wrap3").show();
+				if($(".wrap3").is(':visible')) {
+					game2_2();
+				}
+			}, 800);
+		})
+
+		function textSpec1(dialog, obj) {
+			document.querySelector('#sound_type').load();
+			document.querySelector('#sound_type').play();
+			var index = 0;
+			var timer = setInterval(function() {
+				obj.text(dialog.substring(0, index++));
+			}, 60);
+			if(index == dialog.length) {
+				clearInterval(timer);
+			}
+		}
+		//第三部分
+		var right_answer = ["A", "B", "C"];
+		var answer;
+
+		function game2_2() {
+			$('.wrap3 .dialog:eq(0)').css('opacity', '1');
+			$('.wrap3 .dialog:eq(0)').addClass('zoomInLeft');
+			setTimeout(function() {
+				document.querySelector('.wrap3 #sound_click').play();
+			}, 260)
+			setTimeout(function() {
+				$('.wrap3 .dialog:eq(1)').css('opacity', '1');
+				$('.wrap3 .dialog:eq(1)').addClass('zoomInLeft');
+				setTimeout(function() {
+					document.querySelector('.wrap3 #sound_click').play();
+				}, 260)
+				setTimeout(function() {
+					$('.wrap3 .dialog:eq(2)').css('opacity', '1');
+					$('.wrap3 .dialog:eq(2)').addClass('zoomInLeft');
+					setTimeout(function() {
+						document.querySelector('.wrap3 #sound_click').play();
+					}, 260)
+				}, 650);
+			}, 650);
+			$('.wrap3 .up .dialog').off("click").click(function() {
+				console.log(this)
+				answer = $(this).find('.opt').text();
+				var is_status = $(this).find('.opt').attr("chagecolor");
+				if(is_status == "2" || is_status == 2) {
+					$(this).find('.opt').css('color', '#FFFFFF');
+					$(this).find('.opt').attr("chagecolor", "1");
+				} else if(is_status == "1" || is_status == 1 || is_status == undefined) {
+					$(this).find('.opt').css('color', 'red');
+					$(this).find('.opt').attr("chagecolor", "2");
+				}
+
+			})
+			$('.close').click(function() {
+				window.location.href = 'index.html';
+			})
+			//提交答案
+			$('.wrap3 #next_group').click(function() {
+				//判断答案个数是否3个
+				var num = 0;
+				for(var i = 0; i < $(".wrap3 .opt").length; i++) {
+					if($(".wrap3 .opt").eq(i).attr("chagecolor") == "2") {
+						num++;
+					}
+				}
+				if(num != right_answer.length) {
+					//个数不够
+					$('.wrap3 .board:eq(0)').show();
+					$('.wrap3 .board:eq(0) .white_board').addClass('bounceInDown');
+				} else {
+					$('.wrap3 .board:eq(1)').show();
+					$('.wrap3 .board:eq(1) .white_board').addClass('bounceIn1');
+				}
+
+			})
+		}
+		
+		//全局点击音效
+		document.body.onclick = function() {
+			document.querySelector('.wrap3 #sound_click').play();
+		}
+		var mySwiper = new Swiper('.wrap3 .swiper-container', {
+			loop: false
+		})
+	</script>
+
+</html>
